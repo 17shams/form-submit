@@ -1,0 +1,22 @@
+<header>
+    <nav>
+        </div>
+        <ul class="navbar">
+                <% if (currentPage !== "home") { %>
+                        <li><a href="/">Home</a></li>
+                    <% } %>
+                    <% if (currentPage !== "about") { %>
+                        <li><a href="/about">About Me</a></li>
+                    <% } %>
+                    <% if (currentPage !== "projects") { %>
+                        <li><a href="/projects">Projects</a></li>
+                    <% } %>
+                    <% if (currentPage !== "contact") { %>
+                        <li><a href="/contact">Contact</a></li>
+                    <% } %>
+            <% navBar.forEach(link => { %>
+                <li><a href="<%= link.url %>"><%= link.name %></a></li>
+            <% }); %>
+        </ul>
+    </nav>
+</header>
