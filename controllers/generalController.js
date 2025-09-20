@@ -6,7 +6,7 @@ router.get("/", (req, res) => {
   console.log("HOME AT LAST!!!");
   res.render("general/home.ejs", {
     currentPage: "home",
-    title: "Stacey Salting - Portfolio",
+    title: "Portfolio",
     navBar: [],
   });
 });
@@ -19,14 +19,14 @@ router.post("/projects", (req, res) => {
 router.get("/about", (req, res) => {
   res.render("general/about.ejs", {
     currentPage: "about",
-    title: "Stacey Salting - Portfolio",
+    title: "Portfolio",
     navBar: [],
   });
 });
 
 router.get("/experience", (req, res) => {
   res.render("general/experience.ejs", {
-    title: "Stacey Salting - Portfolio",
+    title: "Portfolio",
     currentPage: "experience",
     navBar: [],
   });
@@ -34,7 +34,7 @@ router.get("/experience", (req, res) => {
 
 router.get("/projects", (req, res) => {
   res.render("general/projects.ejs", {
-    title: "Stacey Salting - Portfolio",
+    title: "Portfolio",
     currentPage: "projects",
     navBar: [],
   });
@@ -42,7 +42,7 @@ router.get("/projects", (req, res) => {
 
 router.get("/skills", (req, res) => {
   res.render("general/skills.ejs", {
-    title: "Stacey Salting - Portfolio",
+    title: "Portfolio",
     currentPage: "skills",
     navBar: [],
   });
