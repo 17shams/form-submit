@@ -7,12 +7,12 @@ router.get("/", (req, res) => {
   res.render("general/home.ejs", {
     currentPage: "home",
     title: "Portfolio",
-    navBar: [],
+    showFooter: true,
+    navBar: []
   });
 });
 
 router.post("/projects", (req, res) => {
-
     res.redirect("/projects");
 });
 
@@ -20,15 +20,8 @@ router.get("/about", (req, res) => {
   res.render("general/about.ejs", {
     currentPage: "about",
     title: "Portfolio",
-    navBar: [],
-  });
-});
-
-router.get("/experience", (req, res) => {
-  res.render("general/experience.ejs", {
-    title: "Portfolio",
-    currentPage: "experience",
-    navBar: [],
+    showFooter: true,
+    navBar: []
   });
 });
 
@@ -37,14 +30,16 @@ router.get("/projects", (req, res) => {
     title: "Portfolio",
     currentPage: "projects",
     navBar: [],
+    showFooter: true
   });
 });
 
-router.get("/skills", (req, res) => {
-  res.render("general/skills.ejs", {
+router.get("/contact", (req, res) => {
+  res.render("general/contact.ejs", {
     title: "Portfolio",
-    currentPage: "skills",
+    currentPage: "contact",
     navBar: [],
+    showFooter: false
   });
 });
 
